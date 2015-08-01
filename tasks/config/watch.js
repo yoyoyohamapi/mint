@@ -27,6 +27,10 @@ module.exports = function(grunt) {
 
 			// When assets are changed:
 			tasks: ['syncAssets' , 'linkAssets']
+		},
+		compass: {
+			files: ['assets/sass/{,*/}*.scss'],
+			tasks: ['compass', 'sync:dev']
 		}
 	});
 
